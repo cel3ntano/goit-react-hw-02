@@ -1,0 +1,69 @@
+.options {
+  margin-top: 30px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.button {
+  width: 100px;
+  border: 2px solid rgb(169, 169, 169);
+  background-color: rgb(169, 169, 169);
+  color: black;
+  transition: border-bottom 0.5s, background-color 0.2s;
+}
+
+.button:active {
+  transform: translateY(1px);
+}
+
+.button:hover {
+  background-color: rgb(188, 188, 188);
+  border: 2px solid rgb(169, 169, 169);
+}
+
+.good {
+  composes: button;
+  border-bottom: 2px solid rgb(176, 255, 199);
+}
+
+.good:hover {
+  background-color: rgb(151, 171, 155);
+  border-bottom: 2px solid rgb(91, 255, 137);
+}
+
+.neutral {
+  composes: button;
+  border-bottom: 2px solid rgb(254, 243, 209);
+}
+
+.neutral:hover {
+  background-color: rgb(171, 168, 151);
+  border-bottom: 2px solid rgb(244, 209, 103);
+}
+
+.bad {
+  composes: button;
+  border-bottom: 2px solid rgb(255, 194, 194);
+}
+
+.bad:hover {
+  background-color: rgb(189, 160, 160);
+  border-bottom: 2px solid rgb(255, 133, 133);
+}
+
+.reset {
+  composes: button;
+  background-color: rgb(209, 209, 209);
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.reset:hover {
+  background-color: rgb(225, 180, 180);
+  border-bottom: 2px solid rgb(255, 98, 98);
+}
+
+.thinking {
+  width: 100px;
+  font-size: 28px;
+}

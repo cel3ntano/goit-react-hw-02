@@ -1,0 +1,44 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  /* position: relative; */
+}
+
+.feedbackContainer {
+  margin-top: 30px;
+  min-height: 100px;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.appContainer {
+  background: inherit;
+  border-radius: 20px;
+  background-size: 400% 100%;
+  animation: appContainerShadow 15s ease-in-out infinite;
+}
+
+@keyframes appContainerShadow {
+  0% {
+    box-shadow: 0 0 20px 0 #007cf0, 0 0 40px 0 #00dfd8, 0 0 60px 0 #ff0080,
+      0 0 80px 0 #007cf0;
+  }
+  25% {
+    box-shadow: 0 0 20px 0 #00dfd8, 0 0 40px 0 #ff0080, 0 0 60px 0 #007cf0,
+      0 0 80px 0 #00dfd8;
+  }
+  50% {
+    box-shadow: 0 0 20px 0 #ff0080, 0 0 40px 0 #007cf0, 0 0 60px 0 #00dfd8,
+      0 0 80px 0 #ff0080;
+    transform: skew(-2deg);
+  }
+  75% {
+    box-shadow: 0 0 20px 0 #007cf0, 0 0 40px 0 #00dfd8, 0 0 60px 0 #ff0080,
+      0 0 80px 0 #007cf0;
+  }
+  100% {
+    box-shadow: 0 0 20px 0 #007cf0, 0 0 40px 0 #00dfd8, 0 0 60px 0 #ff0080,
+      0 0 80px 0 #007cf0;
+  }
+}

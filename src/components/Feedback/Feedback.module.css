@@ -1,0 +1,26 @@
+.feedbackList {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+.good {
+  color: rgb(91, 255, 137);
+}
+
+.neutral {
+  color: rgb(244, 209, 103);
+}
+
+.bad {
+  color: rgb(255, 133, 133);
+}
+
+.positive {
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: 500;
+  color: aquamarine;
+}
