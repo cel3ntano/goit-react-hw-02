@@ -19,7 +19,7 @@ export default function App() {
 
   const updateFeedback = feedbackType => {
     if (feedbackType === "reset") {
-      setFeedback({ good: 0, neutral: 0, bad: 0 });
+      setFeedback(initialFeedback);
     } else
       setFeedback({ ...feedback, [feedbackType]: feedback[feedbackType] + 1 });
   };
