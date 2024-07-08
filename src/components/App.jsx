@@ -21,7 +21,10 @@ export default function App() {
     if (feedbackType === "reset") {
       setFeedback(initialFeedback);
     } else
-      setFeedback({ ...feedback, [feedbackType]: feedback[feedbackType] + 1 });
+      setFeedback(prev => ({
+        ...prev,
+        [feedbackType]: prev[feedbackType] + 1,
+      }));
   };
 
   useEffect(() => {
